@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Range Sample #1</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">sample #1</a></li> 
+    </ul> 
+
+    <form action="javascript:changeBy(1)">
+    <label for="noMachines">Number of Machines</label>
+    <input type="range" id="noMachines" min="1" max="8" value="2">
+<input type="reset" id="reset-range" onclick="javascript:changeBy(0, true)" value="Reset">
+<button formaction="javascript:changeBy(1)" id="plusBtn" class="btn"><img src="./images/plus.png" alt="increment-icon"><br>Increment</button>
+<button formaction="javascript:changeBy(-1)" id="minusBtn" class="btn"><img src="./images/minus.png" alt="decrement-icon" srcset=""><br>Decrement</button>
+</br>
+</form>
+<script src="./javascript/changeby.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 24px;
+    width: 530px;
+}
+ul{
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 12px;
+}
+.btn{
+    padding: 0px;
+}
+.btn img{
+   width: 24px;
+}

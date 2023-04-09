@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>images and mapping</title>
+  </head>
+  <body>
+    <p>
+      Survey Progress
+      <progress id="progress" max="100" value="10"></progress>
+    </p>
+
+    <form action="">
+      <button
+        class="btn"
+        id="plusBtn"
+        formaction="javascript:changeProgress(10)"
+      >
+        <img src="./images/plus.png" alt="" /><br />Increment
+      </button>
+      <button
+        class="btn"
+        id="minusBtn"
+        formaction="javascript:changeProgress(-10)"
+      >
+        <img src="./images/minus.png" alt="" /><br />Decrement
+      </button>
+    </form>
+
+    <img src="./images/scuba-img.jfif" alt="" usemap="#scuba" />
+    <map name="scuba">
+      <area shape="rect" coords="42,32,75,85" href="#james" alt="james" />
+      <area shape="circle" coords="221,122,42" href="#reef" alt="reef" />
+    </map>
+    <h2 id="james">James</h2>
+    <h2 id="reef">Reef</h2>
+    <a href="standards/webdesign/htmlcss">
+      Click to access the HTML &amp; CSS Standard pages
+    </a>
+
+    <div id="computer" data-product-cpu="4th Generation Intel Core i5" data-product-ssd="64/128/256/512 GB">
+        <h4>Surface 2 Pro</h4>
+        <p>CPU : <span id="s2ProCpu"></span></p>
+        <p>SSD : <span id="s2ProSsd"></span></p>
+        <button onclick="getProductInfo('computer','s2ProCpu','s2ProSsd')">Get Detail</button>
+    </div>
+    <script src="./javascript/changeby.js"></script>
+  </body>
+</html>
